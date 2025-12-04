@@ -6,7 +6,7 @@ import heropagephoto from '../../assets/heropagephoto.png';
 
 function Header() {
   return (
-    <div className="min-h-screen bg-cover md:bg-top bg-center"
+    <div className="min-h-screen bg-cover md:bg-top bg-center overflow-hidden"
         style={{backgroundImage: `url(${heropagephoto})`}}>
       <Navbar />
       <Hero/>

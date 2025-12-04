@@ -65,7 +65,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="transpraent backdrop-blur-lg shadow-xl sticky top-0 z-50">
+    <nav className="bg-white/30 md:backdrop-blur-lg backdrop-saturate-150 shadow-xl fixed top-0 left-0 w-full z-[9999]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20">
           {/* Logo */}
@@ -141,7 +141,7 @@ const Navbar = () => {
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden flex items-center">
+          <div className="md:hidden flex items-center ">
             <button
               onClick={toggleMobileMenu}
               className="text-gray-400 hover:text-white focus:outline-none p-2"
