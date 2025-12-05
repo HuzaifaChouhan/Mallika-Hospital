@@ -1,5 +1,5 @@
-import Speacialitiesleft from "./Left/Speacialitiesleft"
-import Speacialitiesright from "./Right/Speacialitiesright"
+import Speacialitiesleft from "./Left/Specialitiesleft"
+import Speacialitiesright from "./Right/Specialitiesright"
 
 export default function Speacialitiesmain () {
     return(

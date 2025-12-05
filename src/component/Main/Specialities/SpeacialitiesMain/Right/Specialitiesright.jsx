@@ -1,4 +1,4 @@
-import CardSwap, { Card } from './Speacialitiesrightcompo';
+import CardSwap, { Card } from './Specialitiesrightcompo';
 import img1 from '../../../../../assets/heropagephoto.png';
 
 export default function Speacialityright () {

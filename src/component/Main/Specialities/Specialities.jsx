@@ -1,10 +1,10 @@
-import Speacialitiestitle from "./SpeacialitiesTitle/Speacialitiestitle";
+import Specialitiestitle from "./SpecialitiesTitle/Specialitiestitle";
 import Speacialitiesmain from './SpeacialitiesMain/Specialitiesmain';
 
-export default function Speacialities () {
+export default function Specialities () {
     return(
         <div>
-            <Speacialitiestitle/>
+            <Specialitiestitle/>
             <Speacialitiesmain/>
         </div>
     );
