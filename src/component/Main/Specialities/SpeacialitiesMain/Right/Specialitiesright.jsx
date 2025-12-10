@@ -1,17 +1,18 @@
 import CardSwap, { Card } from './Specialitiesrightcompo';
 import img1 from '../../../../../assets/heropagephoto.png';
 
-export default function Speacialityright () {
+export default function Speacialitiesright ({ onActiveCardChange }) {
   return (
     <div 
-      className="w-full max-w-md lg:max-w-lg relative overflow-hidden"
+      className="w-full max-w-md lg:max-w-lg relative overflow-hidden "
       style={{ height: "570px" }}
     >
       <CardSwap
+        onActiveCardChange={onActiveCardChange}
         cardDistance={40}
         verticalDistance={60}
         delay={5000}
-        pauseOnHover={false}
+        pauseOnHover={true}
       >
         <Card 
           style={{ backgroundImage: `url(${img1})` }}

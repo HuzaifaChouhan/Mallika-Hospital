@@ -1,6 +1,8 @@
 import Specialities from "./Specialities/Specialities";
 import Achievements from './Achievement/Achievement'
 import Healthquote from "./HealthQuote/Healthquote";
+import AppointmentForm from "../AppoinmentFrom/appointmentform";
+import Authorities from "./Authorities/Authorities";
 
 export default function Main () {
     return (
@@ -8,6 +10,8 @@ export default function Main () {
             <Healthquote/>
             <Specialities/>
             <Achievements/>
+            <Authorities/>
+            <AppointmentForm/>
         </div>
     );
 }

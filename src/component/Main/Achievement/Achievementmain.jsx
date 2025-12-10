@@ -24,7 +24,7 @@ const Achievementmain = () => {
               </svg>
             </div>
             <div className="text-4xl font-bold text-gray-900">
-              <AnimatedCounter targetNumber={1500} suffix="+" />
+              <AnimatedCounter targetNumber={15000} suffix="+" />
             </div>
             <p className="mt-2 text-lg leading-6 font-medium text-gray-600">Happy Patients</p>
           </div>
@@ -37,7 +37,7 @@ const Achievementmain = () => {
               </svg>
             </div>
             <div className="text-4xl font-bold text-gray-900">
-              <AnimatedCounter targetNumber={75} suffix="+" />
+              <AnimatedCounter targetNumber={750} suffix="+" />
             </div>
             <p className="mt-2 text-lg leading-6 font-medium text-gray-600">Expert Doctors</p>
           </div>
@@ -50,7 +50,7 @@ const Achievementmain = () => {
               </svg>
             </div>
             <div className="text-4xl font-bold text-gray-900">
-              <AnimatedCounter targetNumber={2500} suffix="+" />
+              <AnimatedCounter targetNumber={25000} suffix="+" />
             </div>
             <p className="mt-2 text-lg leading-6 font-medium text-gray-600">Successful Surgeries</p>
           </div>
@@ -63,7 +63,7 @@ const Achievementmain = () => {
               </svg>
             </div>
             <div className="text-4xl font-bold text-gray-900">
-              <AnimatedCounter targetNumber={15} suffix="+" />
+              <AnimatedCounter targetNumber={25} suffix="+" />
             </div>
             <p className="mt-2 text-lg leading-6 font-medium text-gray-600">Years of Service</p>
           </div>
