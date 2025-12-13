@@ -5,7 +5,7 @@ const CathLab = () => {
     <div className="bg-gray-50">
 
       {/* Hero Section */}
-      {/* <section className="relative h-96 bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1559757148-5c350d0d3c56?q=80&w=2070&auto=format&fit=crop')" }}>
+      <section className="relative h-96 bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1559757148-5c350d0d3c56?q=80&w=2070&auto=format&fit=crop')" }}>
         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
           <div className="text-center text-white p-4">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Catheterization Laboratory (Cath Lab)</h1>
@@ -14,7 +14,7 @@ const CathLab = () => {
             </p>
           </div>
         </div>
-      </section> */}
+      </section>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
 

@@ -9,7 +9,7 @@ const Navbar = () => {
 
   const navItems = [
     { title: 'About Us', dropdownItems: [] },
-    { title: 'Our Services', dropdownItems: ['CATHLAB', 'ICU', 'OT', 'WARD', 'DIAYSIS CENTER', 'PHARMACY', 'LAB'] },
+    { title: 'Our Services', dropdownItems: ['CATHLAB', 'ICU', 'OT', 'WARD', 'DIALYSIS CENTER', 'PHARMACY', 'LAB'] },
     { title: 'Surgeries', dropdownItems: ['General Surgery', 'Plastic Surgery', 'Onco Surgery', 'Orthopedic', 'Urology', 'Neuro Surgery', 'Ent', 'Proctology', 'Obstetrics & Gynecology', 'Opthalmology', 'Vascular Surgery'] },
     { title: 'Consultants', dropdownItems: ['Cardiology', 'Neurology', 'Urology', 'Physician & Diabetology', 'Neprology', 'Gastroenterology', 'Oncology', 'Pediatrician', 'Dermatology', 'Radiology'] },
     { title: 'Cashless & TPA', dropdownItems: [] },
