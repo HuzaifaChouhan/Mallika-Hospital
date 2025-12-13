@@ -218,7 +218,7 @@ const AppointmentForm = () => {
         </div>
 
         {/* Agreement Checkbox */}
-        <div className="flex items-start">
+        {/* <div className="flex items-start">
           <input
             id="agreedToTerms"
             name="agreedToTerms"
@@ -231,7 +231,7 @@ const AppointmentForm = () => {
           <label htmlFor="agreedToTerms" className="ml-2 block text-sm text-gray-700">
             I agree to the terms and conditions and confirm that the information provided is accurate.
           </label>
-        </div>
+        </div> */}
 
         {/* Submit Button */}
         <div>

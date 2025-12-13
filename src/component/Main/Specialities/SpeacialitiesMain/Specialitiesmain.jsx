@@ -1,5 +1,4 @@
 import { useState } from "react";
-// import Speacialitiesleft from "./Left/Specialitiesleft"
 import Speacialitiesright from "./Right/Specialitiesright"
 
 export default function Speacialitiesmain () {
@@ -9,23 +8,23 @@ export default function Speacialitiesmain () {
           // Left text that changes with cards
           const cardTexts = [
             {
-              title: "Orthopedics",
-              desc: "We provide advanced bone and joint treatments with experienced doctors."
+              title: "Urology",
+              desc: "The Urology Department offers a wide range of medical and surgical services related to the urinary system (kidneys, bladder and urethra)"
             },
             {
-              title: "Cardiology",
-              desc: "Our heart specialists offer world-class cardiac care with modern facilities."
+              title: "Anesthesiology",
+              desc: "Obstetrics & Gynecology department is characterized by specialized, personalized, and dedicated and consultant obstetrician care."
             },
             {
-              title: "Neurology",
-              desc: "Expert neuro specialists for brain and spine-related disorders."
+              title: "Laparoscopy Surgery",
+              desc: "The surgeons and staff at the Laparoscopic Surgical Center is characterized by specialized, personalized,and dedicated and consultant obstetrician care"
             }
           ];
 
   return(
     <div className="w-full flex flex-col lg:flex-row items-center justify-between gap-5">
             {/* LEFT SECTION */}
-            <div className="text-center px-10 py-5 md:py-0 ">
+            <div className="text-center px-5 py-5 md:py-0 w-[70%]">
               <h2 className="text-3xl font-bold mb-4">
                 {cardTexts[activeCard].title}
               </h2>
@@ -36,7 +35,7 @@ export default function Speacialitiesmain () {
             </div>
 
             {/* RIGHT CARD SECTION */}
-                <div className="w-full lg:w-1/2 flex justify-end">
+                <div className="w-full lg:w-1/2 flex justify-end w-[30%]">
                   <Speacialitiesright onActiveCardChange={setActiveCard} />
                 </div>
         </div>

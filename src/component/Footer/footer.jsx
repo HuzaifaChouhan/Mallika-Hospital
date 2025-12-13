@@ -53,7 +53,59 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Column 4: Legal & Newsletter */}
+          {/* Column 4: Services */}
+
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Services</h3>
+            <ul className="space-y-2">
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">CATHLAB</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">ICU</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">OT</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">WARD</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">DIAYSIS CENTER</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">PHARMACY</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">LAB</a></li>
+            </ul>
+          </div>
+
+          {/* Column 5: Medical Services */}
+
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Medical Services</h3>
+            <ul className="space-y-2">
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">General Surgery</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">Plastic Surgery</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">Onco Surgery</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">Orthopedic</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">Urology</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">Neuro Surgery</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">Ent</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">Proctology</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">Obstetrics & Gynecology</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">Opthalmology</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">Vascular Surgery</a></li>
+            </ul>
+          </div>
+
+          {/* Column 6: Consultants */}
+
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Consultants</h3>
+            <ul className="space-y-2">
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">Cardiology</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">Neurology</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">Urology</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">Physician & Diabetology</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">Neprology</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">Gastroenterology</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">Oncology</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">Pediatrician</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">Dermatology</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">Radiology</a></li>
+            </ul>
+          </div>
+
+          {/* Column 7: Legal & Newsletter */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Legal</h3>
             <ul className="space-y-2 mb-6">
@@ -84,10 +136,10 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="border-t border-slate-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-400 text-sm mb-4 md:mb-0">
+          {/* <p className="text-gray-400 text-sm mb-4 md:mb-0">
             &copy; {new Date().getFullYear()} City General Hospital. All Rights Reserved.
-          </p>
-          <div className="flex space-x-6">
+          </p> */}
+          <div className="flex space-x-6 mb-5">
             <a href="#" aria-label="Facebook" className="text-gray-400 hover:text-white transition-colors duration-300">
               <FaFacebookF size={20} />
             </a>
