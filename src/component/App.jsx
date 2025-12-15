@@ -1,4 +1,3 @@
-import React from 'react';
 import { Routes, Route } from "react-router-dom";
 
 // Components
@@ -7,6 +6,7 @@ import Navbar from './Header/Navbar/navbar';
 import Main from './Main/main';
 import Footer from './Footer/footer';
 
+// Services component
 import CathLab from './Header/Services/cathlab'; 
 import ICU from './Header/Services/icu';
 import OperatingTheatre from './Header/Services/ot';
@@ -14,6 +14,18 @@ import Ward from './Header/Services/ward';
 import DialysisCenter from './Header/Services/dialysiscenter';
 import Pharmacy from './Header/Services/pharmacy';
 import Laboratory from './Header/Services/lab';
+
+//Surgeries
+import GeneralSurgery from './Header/Surgeries/GeneralSurgery';
+import PlasticSurgery from './Header/Surgeries/PlasticSurgery';
+import OncoSurgery from './Header/Surgeries/OncoSurgery';
+import Orthopedic from './Header/Surgeries/Orthopedic';
+import NeuroSurgery from './Header/Surgeries/NeuroSurgery';
+import Ent from './Header/Surgeries/Ent';
+import Proctology from './Header/Surgeries/Proctology';
+import ObstetricsGynecology from './Header/Surgeries/ObstetricsGynecology';
+import Opthalmology from './Header/Surgeries/Opthalmology';
+import VascularSurgery from './Header/Surgeries/VascularSurgery';
 
 function App() {
   return (
@@ -38,7 +50,18 @@ function App() {
           <Route path="/services/pharmacy" element={<Pharmacy />} />
           <Route path="/services/lab" element={<Laboratory />} />
 
-          
+          {/* Surgery Pages */}
+          <Route path='/surgeries/general-surgery' element={<GeneralSurgery />} />
+          <Route path='/surgeries/plastic-surgery' element={<PlasticSurgery />} />
+          <Route path='/surgeries/onco-surgery' element={<OncoSurgery />} />
+          <Route path='/surgeries/orthopedic' element={<Orthopedic />} />
+          <Route path='/surgeries/neuro-surgery' element={<NeuroSurgery />} />
+          <Route path='/surgeries/ent' element={<Ent />} />
+          <Route path='/surgeries/proctology' element={<Proctology />} />
+          <Route path='/surgeries/obstetrics-and-gynecology' element={<ObstetricsGynecology />} />
+          <Route path='/surgeries/Opthalmology' element={<Opthalmology />} />
+          <Route path='/surgeries/vascular-surgery' element={<VascularSurgery />} />
+
         </Routes>
       </div>
 
