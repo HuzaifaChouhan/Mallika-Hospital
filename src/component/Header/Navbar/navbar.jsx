@@ -72,7 +72,7 @@ const Navbar = () => {
                     // Dropdown Button
                     <button
                       onClick={() => toggleDropdown(item.title)}
-                      className="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 flex items-center"
+                      className="text-gray-600 hover:text-blue-600 px-3 py-1 rounded-md text-sm font-medium transition-colors duration-200 flex items-center"
                     >
                       {item.title}
                       <svg className={`ml-2 h-4 w-4 transform transition-transform duration-200 ${activeDropdown === item.title ? 'rotate-180' : ''}`} fill="currentColor" viewBox="0 0 20 20">

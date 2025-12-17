@@ -27,6 +27,18 @@ import ObstetricsGynecology from './Header/Surgeries/ObstetricsGynecology';
 import Opthalmology from './Header/Surgeries/Opthalmology';
 import VascularSurgery from './Header/Surgeries/VascularSurgery';
 
+//Consultants
+import Cardiology from "./Header/Consultants/Cardiology";
+import Neurology from "./Header/Consultants/Neurology";
+import Urology from "./Header/Consultants/Urology";
+import InternalMedicine from "./Header/Consultants/PhysicianDiabetology";
+import Nephrology from "./Header/Consultants/Neprology";
+import Gastroenterology from "./Header/Consultants/Gastroenterology";
+import Oncology from "./Header/Consultants/Oncology";
+import Pediatrician from "./Header/Consultants/Pediatrician";
+import Dermatology from "./Header/Consultants/Dermatology";
+import Radiology from "./Header/Consultants/Radiology";
+
 function App() {
   return (
     <div className="flex flex-col min-h-screen">
@@ -61,6 +73,18 @@ function App() {
           <Route path='/surgeries/obstetrics-and-gynecology' element={<ObstetricsGynecology />} />
           <Route path='/surgeries/Opthalmology' element={<Opthalmology />} />
           <Route path='/surgeries/vascular-surgery' element={<VascularSurgery />} />
+
+          {/* Consultants Pages */}
+          <Route path='/consultants/cardiology' element={<Cardiology />} />
+          <Route path='/consultants/neurology' element={<Neurology />} />
+          <Route path='/consultants/urology' element={<Urology />} />
+          <Route path='/consultants/physician-and-diabetology' element={<InternalMedicine />} />
+          <Route path='/consultants/neprology' element={<Nephrology />} />
+          <Route path='/consultants/gastroenterology' element={<Gastroenterology />} />
+          <Route path='/consultants/oncology' element={<Oncology />} />
+          <Route path='/consultants/pediatrician' element={<Pediatrician />} />
+          <Route path='/consultants/dermatology' element={<Dermatology />} />
+          <Route path='/consultants/radiology' element={<Radiology />} />
 
         </Routes>
       </div>
