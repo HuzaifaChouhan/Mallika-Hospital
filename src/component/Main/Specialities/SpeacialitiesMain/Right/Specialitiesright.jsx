@@ -11,7 +11,7 @@ export default function Speacialitiesright ({ onActiveCardChange }) {
         onActiveCardChange={onActiveCardChange}
         cardDistance={40}
         verticalDistance={60}
-        delay={5000}
+        delay={6000}
         pauseOnHover={true}
       >
         <Card 
@@ -19,7 +19,7 @@ export default function Speacialitiesright ({ onActiveCardChange }) {
           customClass="bg-cover bg-center bg-no-repeat rounded-xl overflow-hidden"
         >           
           <div className="relative z-10 p-6 text-white">
-            <h3 className="text-xl font-bold">Urology</h3>
+            <h3 className="text-xl font-bold">Nephrology</h3>
             <p></p>
           </div>
           <div className="absolute inset-0 bg-black/30 rounded-xl"></div>
@@ -30,13 +30,13 @@ export default function Speacialitiesright ({ onActiveCardChange }) {
           customClass="bg-cover bg-center bg-no-repeat rounded-xl overflow-hidden"
         >
           <div className="relative z-10 p-6 text-white">
-            <h3 className="text-xl font-bold">Anesthesiology</h3>
+            <h3 className="text-xl font-bold">Medicines</h3>
             <p></p>
           </div>
           <div className="absolute inset-0 bg-black/30 rounded-xl"></div>
         </Card>
 
-        <Card 
+        {/* <Card 
           style={{ backgroundImage: `url(${img1})` }}
           customClass="bg-cover bg-center bg-no-repeat rounded-xl overflow-hidden"
         >
@@ -45,7 +45,7 @@ export default function Speacialitiesright ({ onActiveCardChange }) {
             <p></p>
           </div>
           <div className="absolute inset-0 bg-black/30 rounded-xl"></div>
-        </Card>
+        </Card> */}
       </CardSwap>
     </div>
   );

@@ -93,7 +93,7 @@ const AppointmentForm = () => {
           </div>
 
           {/* Email */}
-          <div>
+          {/* <div>
             <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email Address</label>
             <input
               type="email"
@@ -104,7 +104,7 @@ const AppointmentForm = () => {
               required
               className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500"
             />
-          </div>
+          </div> */}
 
           {/* Phone Number */}
           <div>
@@ -121,7 +121,7 @@ const AppointmentForm = () => {
           </div>
 
           {/* Date of Birth */}
-          <div>
+          {/* <div>
             <label htmlFor="dateOfBirth" className="block text-sm font-medium text-gray-700">Date of Birth</label>
             <input
               type="date"
@@ -132,7 +132,7 @@ const AppointmentForm = () => {
               required
               className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500"
             />
-          </div>
+          </div> */}
 
           {/* Department */}
           <div>

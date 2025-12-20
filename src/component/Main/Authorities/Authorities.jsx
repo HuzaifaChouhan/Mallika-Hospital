@@ -1,7 +1,7 @@
 const leadershipData = {
   head: {
     id: 1,
-    name: "Dr. Evelyn Reed",
+    name: "Dr. Sharad sheth",
     title: "Chief Executive Officer & Medical Director",
     description: "With over 25 years of experience in healthcare administration, Dr. Reed leads our institution with a vision for compassionate, patient-centered care.",
     image: "https://i.ibb.co/61X8vC0/img1.jpg" // Placeholder image
@@ -9,21 +9,21 @@ const leadershipData = {
   leadership: [
     {
       id: 2,
-      name: "Dr. Ben Carter",
+      name: "Dr. Roshan Jha",
       title: "Chief of Surgery",
       description: "A renowned surgeon specializing in minimally invasive procedures, Dr. Carter oversees all surgical departments.",
       image: "https://i.ibb.co/L8y9QcQ/img2.jpg" // Placeholder image
     },
     {
       id: 3,
-      name: "Dr. Aisha Khan",
+      name: "Dr. Keshnath Chauhan",
       title: "Chief of Medicine",
       description: "Dr. Khan is an expert in internal medicine and leads our team of physicians in providing comprehensive medical care.",
       image: "https://i.ibb.co/Ks2f31v/img3.jpg" // Placeholder image
     },
     {
       id: 4,
-      name: "Maria Flores",
+      name: "Dr. Name",
       title: "Chief Nursing Officer",
       description: "With a passion for nursing excellence, Maria ensures the highest standards of patient care and nursing practices.",
       image: "https://i.ibb.co/3Tj1f5H/img4.jpg" // Placeholder image

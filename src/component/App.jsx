@@ -15,29 +15,38 @@ import DialysisCenter from './Header/Services/dialysiscenter';
 import Pharmacy from './Header/Services/pharmacy';
 import Laboratory from './Header/Services/lab';
 
+// AboutUs 
+import AboutUs from "./AboutUs/About";
+
 //Surgeries
 import GeneralSurgery from './Header/Surgeries/GeneralSurgery';
-import PlasticSurgery from './Header/Surgeries/PlasticSurgery';
 import OncoSurgery from './Header/Surgeries/OncoSurgery';
+import ObstetricsGynecology from './Header/Surgeries/ObstetricsGynecology';
 import Orthopedic from './Header/Surgeries/Orthopedic';
 import NeuroSurgery from './Header/Surgeries/NeuroSurgery';
 import Ent from './Header/Surgeries/Ent';
-import Proctology from './Header/Surgeries/Proctology';
-import ObstetricsGynecology from './Header/Surgeries/ObstetricsGynecology';
 import Opthalmology from './Header/Surgeries/Opthalmology';
-import VascularSurgery from './Header/Surgeries/VascularSurgery';
+import Proctology from './Header/Surgeries/Proctology';
+// import PlasticSurgery from './Header/Surgeries/PlasticSurgery';
+// import VascularSurgery from './Header/Surgeries/VascularSurgery';
 
 //Consultants
-import Cardiology from "./Header/Consultants/Cardiology";
-import Neurology from "./Header/Consultants/Neurology";
-import Urology from "./Header/Consultants/Urology";
 import InternalMedicine from "./Header/Consultants/PhysicianDiabetology";
 import Nephrology from "./Header/Consultants/Neprology";
-import Gastroenterology from "./Header/Consultants/Gastroenterology";
+import Cardiology from "./Header/Consultants/Cardiology";
+import Neurology from "./Header/Consultants/Neurology";
 import Oncology from "./Header/Consultants/Oncology";
+import Gastroenterology from "./Header/Consultants/Gastroenterology";
 import Pediatrician from "./Header/Consultants/Pediatrician";
 import Dermatology from "./Header/Consultants/Dermatology";
-import Radiology from "./Header/Consultants/Radiology";
+// import Urology from "./Header/Consultants/Urology";
+// import Radiology from "./Header/Consultants/Radiology";
+
+// Cashless & TPA
+import CashlessTpa from "./Cashless&TPA/CashlessTPA";
+
+// GovtSchemes
+import GovtSchemes from "./GovtSch/GovtSchemes";
 
 function App() {
   return (
@@ -52,7 +61,11 @@ function App() {
               <Header/>
               <Main/>
             </>
-          } />          
+          } />  
+
+          {/* About Us */}
+          <Route path='/about-us' element={<AboutUs />} />
+
           {/* Service Pages */}
           <Route path="/services/cathlab" element={<CathLab />} />
           <Route path="/services/icu" element={<ICU />} />
@@ -64,27 +77,33 @@ function App() {
 
           {/* Surgery Pages */}
           <Route path='/surgeries/general-surgery' element={<GeneralSurgery />} />
-          <Route path='/surgeries/plastic-surgery' element={<PlasticSurgery />} />
           <Route path='/surgeries/onco-surgery' element={<OncoSurgery />} />
+          <Route path='/surgeries/obstetrics-and-gynecology' element={<ObstetricsGynecology />} />
           <Route path='/surgeries/orthopedic' element={<Orthopedic />} />
           <Route path='/surgeries/neuro-surgery' element={<NeuroSurgery />} />
           <Route path='/surgeries/ent' element={<Ent />} />
-          <Route path='/surgeries/proctology' element={<Proctology />} />
-          <Route path='/surgeries/obstetrics-and-gynecology' element={<ObstetricsGynecology />} />
           <Route path='/surgeries/Opthalmology' element={<Opthalmology />} />
-          <Route path='/surgeries/vascular-surgery' element={<VascularSurgery />} />
+          <Route path='/surgeries/proctology' element={<Proctology />} />
+          {/* <Route path='/surgeries/plastic-surgery' element={<PlasticSurgery />} /> */}
+          {/* <Route path='/surgeries/vascular-surgery' element={<VascularSurgery />} /> */}
 
           {/* Consultants Pages */}
-          <Route path='/consultants/cardiology' element={<Cardiology />} />
-          <Route path='/consultants/neurology' element={<Neurology />} />
-          <Route path='/consultants/urology' element={<Urology />} />
           <Route path='/consultants/physician-and-diabetology' element={<InternalMedicine />} />
           <Route path='/consultants/neprology' element={<Nephrology />} />
-          <Route path='/consultants/gastroenterology' element={<Gastroenterology />} />
+          <Route path='/consultants/cardiology' element={<Cardiology />} />
+          <Route path='/consultants/neurology' element={<Neurology />} />
           <Route path='/consultants/oncology' element={<Oncology />} />
+          <Route path='/consultants/gastroenterology' element={<Gastroenterology />} />
           <Route path='/consultants/pediatrician' element={<Pediatrician />} />
           <Route path='/consultants/dermatology' element={<Dermatology />} />
-          <Route path='/consultants/radiology' element={<Radiology />} />
+          {/* <Route path='/consultants/urology' element={<Urology />} /> */}
+          {/* <Route path='/consultants/radiology' element={<Radiology />} /> */}
+
+          {/* Cashless & TPA */}
+          <Route path='/cashless-&-tpa' element={<CashlessTpa />} />
+
+          {/* Govt Schemes */}
+          <Route path='/govt.sch' element={<GovtSchemes />} />
 
         </Routes>
       </div>

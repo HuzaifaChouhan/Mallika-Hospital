@@ -8,17 +8,17 @@ export default function Speacialitiesmain () {
           // Left text that changes with cards
           const cardTexts = [
             {
-              title: "Urology",
-              desc: "The Urology Department offers a wide range of medical and surgical services related to the urinary system (kidneys, bladder and urethra)"
+              title: "Nephrology",
+              desc: "Nephrology is the branch of medicine that focuses on the kidneys, their function, and diseases affecting them. Specialists in this field are called nephrologists. The kidneys play a vital role in maintaining fluid balance, electrolyte levels, blood pressure, and waste removal from the body."
             },
             {
-              title: "Anesthesiology",
-              desc: "Obstetrics & Gynecology department is characterized by specialized, personalized, and dedicated and consultant obstetrician care."
+              title: "Medicines",
+              desc: "Medicine, also known as Internal Medicine, is a major branch of medical science that deals with the prevention, diagnosis, and non-surgical treatment of diseases in adults. Physicians specializing in this field are called internists."
             },
-            {
-              title: "Laparoscopy Surgery",
-              desc: "The surgeons and staff at the Laparoscopic Surgical Center is characterized by specialized, personalized,and dedicated and consultant obstetrician care"
-            }
+            // {
+            //   title: "Laparoscopy Surgery",
+            //   desc: "The surgeons and staff at the Laparoscopic Surgical Center is characterized by specialized, personalized,and dedicated and consultant obstetrician care"
+            // }
           ];
 
   return(
