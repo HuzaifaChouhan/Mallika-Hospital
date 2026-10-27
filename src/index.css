@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-blue: #0477bf;
+  --color-brand-blue-dark: #035a94;
+  --color-brand-blue-light: #e6f3fb;
+  --color-brand-red: #b81d2b;
+  --color-brand-green: #6dbd45;
+
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+body { @apply font-sans text-slate-800 antialiased; }
