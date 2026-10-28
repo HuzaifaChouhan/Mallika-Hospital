@@ -1,0 +1,183 @@
+import img1 from '../../../assets/Consultant/img.png';
+import img2 from '../../../assets/Consultant/img.png';
+import img3 from '../../../assets/Consultant/img.png';
+import img4 from '../../../assets/Consultant/img.png';
+import img5 from '../../../assets/Consultant/img.png';
+import { FaHeartbeat, FaUserMd, FaStethoscope, FaProcedures, FaLaptopMedical, FaClock } from 'react-icons/fa';
+import { useEffect, useState } from 'react';
+import { Helmet } from 'react-helmet-async'; // 1. IMPORT HELMET
+import { getDoctors } from '../../dashboard/api';
+import DoctorCard from '../DoctorCard';
+
+const Cardiology = () => {
+  const [doctors, setDoctors] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  // ✅ ONLY THESE 6 DOCTORS
+  const CARDIOLOGY_DEPARTMENT_ID = 12;
+
+  useEffect(() => {
+    const fetchDoctors = async () => {
+      try {
+        const data = await getDoctors();
+
+        // ✅ FILTER BY ID (EXACT MATCH)
+        const selectedDoctors = data.filter(
+          (doctor) => doctor.department === CARDIOLOGY_DEPARTMENT_ID
+        );
+
+        // ✅ Automatically apply the priority order we built in the backend
+        selectedDoctors.sort((a, b) => (a.display_order ?? 100) - (b.display_order ?? 100));
+
+        setDoctors(selectedDoctors);
+      } catch (error) {
+        console.error('Failed to fetch doctors:', error);
+      } finally {
+        loading && setLoading(false);
+      }
+    };
+
+    fetchDoctors();
+  }, []);
+
+  const formatTime = (time) => {
+    if (!time) return 'By Appointment';
+    const [h, m] = time.split(':');
+    const hour = h % 12 || 12;
+    const ampm = h >= 12 ? 'PM' : 'AM';
+    return `${hour}:${m} ${ampm}`;
+  };
+
+  return (
+    <div className="w-full min-h-screen bg-white pt-20">
+      
+      {/* --- 2. CARDIOLOGY LEVEL LOCAL SEO --- */}
+      <Helmet>
+        <title>Best Cardiologists & Heart Care in Jogeshwari West | Mallika Hospital</title>
+        <meta name="description" content="Consult top heart specialists and cardiologists at Mallika Hospital, Jogeshwari West, Mumbai. 24/7 advanced cardiac care, Cath Lab facilities, and expert treatment for heart conditions." />
+        <link rel="canonical" href="https://mallikahospital.co.in/consultants/cardiology" />
+      </Helmet>
+
+      {/* Hero Section */}
+      <div className="relative h-96 overflow-hidden w-full">
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-950/85 via-blue-900/45 to-transparent z-10"></div>
+        <img 
+          src={img1} 
+          alt="Cardiology Department" 
+          className="absolute inset-0 w-full h-full object-cover object-center"
+        />
+        <div className="relative z-20 h-full flex items-center justify-center text-center text-white px-4">
+          <div>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">Cardiology</h1>
+            <div className="w-32 h-1 bg-white mx-auto mb-6"></div>
+            <p className="text-xl leading-relaxed drop-shadow-md">
+              Leaders in heart health, dedicated to providing you with expert, personalized, and compassionate cardiac care.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* DOCTORS */}
+      <div className="max-w-7xl mx-auto px-4 py-16">
+        <h2 className="text-3xl font-bold text-center mb-10">
+          Our Cardiology Consultants
+        </h2>
+
+        {loading ? (
+          <p className="text-center text-gray-500">Loading doctors...</p>
+        ) : (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {doctors.map((doctor) => (
+              <DoctorCard
+                key={doctor.id}
+                doctor={doctor}
+                departmentName="Cardiology"
+                formatTime={formatTime}
+              />
+            ))}
+          </div>
+        )}
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
+        {/* Introduction Section */}
+        <section className="text-center">
+          <h2 className="text-3xl font-bold text-gray-800 mb-4">Excellence in Cardiovascular Care</h2>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            Our team of board-certified cardiologists is at the forefront of diagnosing and treating heart and vascular diseases. 
+            We combine years of experience with the latest medical advancements to ensure you receive the highest standard of care, tailored to your unique needs.
+          </p>
+        </section>
+
+        {/* Our Approach to Care */}
+        <section className="bg-white p-8 rounded-lg shadow-lg flex flex-col md:flex-row items-center gap-8">
+          <div className="md:w-1/2">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">A Partnership for Your Heart</h2>
+            <p className="text-gray-600 mb-4">
+              We believe in building a strong, collaborative relationship with our patients, founded on trust, education, and shared decision-making.
+            </p>
+            <ul className="space-y-3 text-gray-700">
+              <li className="flex items-start"><FaStethoscope className="text-blue-500 mr-2 mt-1 flex-shrink-0" /> <span><strong>Comprehensive Diagnostics:</strong> We utilize state-of-the-art non-invasive and invasive testing to achieve an accurate and timely diagnosis.</span></li>
+              <li className="flex items-start"><FaUserMd className="text-blue-500 mr-2 mt-1 flex-shrink-0" /> <span><strong>Personalized Treatment Plans:</strong> Your cardiologist will work with you to create a treatment plan that fits your lifestyle and health goals.</span></li>
+              <li className="flex items-start"><FaHeartbeat className="text-blue-500 mr-2 mt-1 flex-shrink-0" /> <span><strong>Preventative Focus:</strong> We are dedicated to helping you manage risk factors and prevent heart disease before it starts.</span></li>
+            </ul>
+          </div>
+          <div className="md:w-1/2">
+            <img src={img2} 
+              alt="Cardiologist consulting with a patient" 
+              className="rounded-lg shadow-md w-full object-cover h-64 md:h-full" />
+          </div>
+        </section>
+
+        {/* Cardiology Subspecialties */}
+        <section className="space-y-16">
+          <h2 className="text-3xl font-bold text-center text-gray-800">Our Areas of Expertise</h2>
+          
+          <div className="bg-white p-8 rounded-lg shadow-lg flex flex-col md:flex-row items-center gap-8">
+            <div className="md:w-1/2">
+              <h3 className="text-2xl font-bold text-gray-800 mb-2 flex items-center"><FaProcedures className="text-red-500 mr-3" />Interventional Cardiology</h3>
+              <p className="text-gray-600">
+                Our interventional cardiologists specialize in minimally invasive procedures to open blocked arteries, such as angioplasty and stenting, to treat heart attacks and coronary artery disease.
+              </p>
+            </div>
+            <div className="md:w-1/2">
+              <img src={img3} 
+                alt="Cardiac catheterization procedure" 
+                className="rounded-lg shadow-md w-full object-cover h-64 md:h-full" />
+            </div>
+          </div>
+
+          <div className="bg-white p-8 rounded-lg shadow-lg flex flex-col md:flex-row-reverse items-center gap-8">
+            <div className="md:w-1/2">
+              <h3 className="text-2xl font-bold text-gray-800 mb-2 flex items-center"><FaHeartbeat className="text-blue-500 mr-3" />Clinical Cardiology & Heart Failure</h3>
+              <p className="text-gray-600">
+                We provide comprehensive, non-invasive care for a wide range of heart conditions, including hypertension, heart failure, and valve disease, focusing on long-term management and improving quality of life.
+              </p>
+            </div>
+            <div className="md:w-1/2">
+              <img src={img4} 
+                alt="Doctor listening to a patient's heart" 
+                className="rounded-lg shadow-md w-full object-cover h-64 md:h-full" />
+            </div>
+          </div>
+
+          <div className="bg-white p-8 rounded-lg shadow-lg flex flex-col md:flex-row items-center gap-8">
+            <div className="md:w-1/2">
+              <h3 className="text-2xl font-bold text-gray-800 mb-2 flex items-center"><FaLaptopMedical className="text-purple-500 mr-3" />Electrophysiology (EP)</h3>
+              <p className="text-gray-600">
+                Our electrophysiologists are experts in diagnosing and treating abnormal heart rhythms (arrhythmias) with advanced procedures like ablation and the implantation of pacemakers and defibrillators.
+              </p>
+            </div>
+            <div className="md:w-1/2">
+              <img src={img5} 
+                alt="Electrophysiology lab" 
+                className="rounded-lg shadow-md w-full object-cover h-64 md:h-full" />
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  );
+};
+
+export default Cardiology;
