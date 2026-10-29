@@ -119,14 +119,14 @@ function App() {
 
           {/* Consultants Pages */}
           <Route path='/consultants/physician-and-diabetology' element={<InternalMedicine />} />
-          {/* <Route path='/consultants/nephrology' element={<Nephrology />} />
+          <Route path='/consultants/nephrology' element={<Nephrology />} />
           <Route path='/consultants/cardiology' element={<Cardiology />} />
           <Route path='/consultants/neurology' element={<Neurology />} />
           <Route path='/consultants/oncology' element={<Oncology />} />
           <Route path='/consultants/gastroenterology' element={<Gastroenterology />} />
-          <Route path='/consultants/pediatrician' element={<Pediatrician />} />
+          <Route path='/consultants/hematology' element={<Hematology />} />
           <Route path='/consultants/dermatology' element={<Dermatology />} />
-          <Route path='/consultants/hematology' element={<Hematology />} /> */}
+          <Route path='/consultants/pediatrician' element={<Pediatrician />} />
 
           {/* Additional Pages */}
           <Route path='/testimonial' element={<Testimonial />} />
