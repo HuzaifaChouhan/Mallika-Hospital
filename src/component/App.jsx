@@ -21,16 +21,16 @@ const Laboratory = lazy(() => import('./Header/Services/lab'));
 
 // Lazy-loaded Surgeries
 const GeneralSurgery = lazy(() => import('./Header/Surgeries/GeneralSurgery'));
-// const OncoSurgery = lazy(() => import('./Header/Surgeries/OncoSurgery'));
-// const ObstetricsGynecology = lazy(() => import('./Header/Surgeries/ObstetricsGynecology'));
-// const Orthopedic = lazy(() => import('./Header/Surgeries/Orthopedic'));
-// const NeuroSurgery = lazy(() => import('./Header/Surgeries/NeuroSurgery'));
+const OncoSurgery = lazy(() => import('./Header/Surgeries/OncoSurgery'));
+const ObstetricsGynecology = lazy(() => import('./Header/Surgeries/ObstetricsGynecology'));
+const Orthopedic = lazy(() => import('./Header/Surgeries/Orthopedic'));
+const NeuroSurgery = lazy(() => import('./Header/Surgeries/NeuroSurgery'));
 const Ent = lazy(() => import('./Header/Surgeries/Ent'));
 // const Opthalmology = lazy(() => import('./Header/Surgeries/Opthalmology'));
-// const Proctology = lazy(() => import('./Header/Surgeries/Proctology'));
-// const PediatricSurgery = lazy(() => import("./Header/Surgeries/PediatricSurgery.jsx"));
-// const PlasticSurgery = lazy(() => import('./Header/Surgeries/PlasticSurgery.jsx'));
-// const Urology = lazy(() => import("./Header/Surgeries/Urology.jsx"));
+const Proctology = lazy(() => import('./Header/Surgeries/Proctology'));
+const PediatricSurgery = lazy(() => import("./Header/Surgeries/PediatricSurgery.jsx"));
+const PlasticSurgery = lazy(() => import('./Header/Surgeries/PlasticSurgery.jsx'));
+const Urology = lazy(() => import("./Header/Surgeries/Urology.jsx"));
 
 // Lazy-loaded Consultants
 const InternalMedicine = lazy(
@@ -117,16 +117,16 @@ function App() {
 
             {/* Surgery Pages */}
             <Route path="/surgeries/general-surgery" element={<GeneralSurgery />} />
-            {/* <Route path="/surgeries/onco-surgery" element={<OncoSurgery />} /> */}
-            {/* <Route path="/surgeries/obstetrics-and-gynecology" element={<ObstetricsGynecology />} /> */}
-            {/* <Route path="/surgeries/orthopedic" element={<Orthopedic />} /> */}
-            {/* <Route path="/surgeries/neuro-surgery" element={<NeuroSurgery />} /> */}
+            <Route path="/surgeries/onco-surgery" element={<OncoSurgery />} />
+            <Route path="/surgeries/obstetrics-and-gynecology" element={<ObstetricsGynecology />} />
+            <Route path="/surgeries/orthopedic" element={<Orthopedic />} />
+            <Route path="/surgeries/neuro-surgery" element={<NeuroSurgery />} />
             <Route path="/surgeries/ent" element={<Ent />} />
             {/* <Route path="/surgeries/Opthalmology" element={<Opthalmology />} /> */}
-            {/* <Route path="/surgeries/proctology" element={<Proctology />} /> */}
-            {/* <Route path="/surgeries/pediatric-surgery" element={<PediatricSurgery />} /> */}
-            {/* <Route path="/surgeries/plastic-surgery" element={<PlasticSurgery />} /> */}
-            {/* <Route path="/surgeries/urology" element={<Urology />} /> */}
+            <Route path="/surgeries/proctology" element={<Proctology />} />
+            <Route path="/surgeries/pediatric-surgery" element={<PediatricSurgery />} />
+            <Route path="/surgeries/plastic-surgery" element={<PlasticSurgery />} />
+            <Route path="/surgeries/urology" element={<Urology />} />
 
             {/* Consultants Pages */}
             <Route path="/consultants/physician-and-diabetology" element={<InternalMedicine />} />
